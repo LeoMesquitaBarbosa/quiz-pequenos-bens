@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6d8">
+  <title>Quiz Pequenos Bens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card" id="start-screen">
+      <div class="top-badge">🌱 ⭐ 😊</div>
+      <h1>Quiz Pequenos Bens</h1>
+      <p class="intro">Escolha A, B ou C e descubra como pequenas atitudes fazem o bem crescer todos os dias.</p>
+      <button class="primary-action" id="start-button">Começar Quiz</button>
+    </section>
+
+    <section class="card hidden" id="quiz-screen">
+      <div class="progress-row">
+        <span id="progress-label">Pergunta 1 de 10</span>
+        <span id="score-label">0 ⭐</span>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <h2 id="question-text"></h2>
+
+      <div class="options" id="options"></div>
+
+      <p class="feedback" id="feedback" aria-live="polite"></p>
+      <button class="primary-action next-action hidden" id="next-button">Próxima pergunta</button>
+    </section>
+
+    <section class="card hidden" id="final-screen">
+      <div class="top-badge">🎉 🌱 🎉</div>
+      <h1>Parabéns!</h1>
+      <p class="final-score" id="final-score"></p>
+      <p class="intro">Parabéns! O bem cresce pouquinho por pouquinho!</p>
+      <button class="primary-action" id="restart-button">Jogar novamente</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
